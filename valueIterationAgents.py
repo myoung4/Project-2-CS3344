@@ -159,7 +159,7 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
     def runValueIteration(self):
         states = self.mdp.getStates()
         length = len(states)
-        num = 0
+        # num = 0
         num2 = 0
 
         for num in range(self.iterations):
