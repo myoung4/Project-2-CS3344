@@ -163,6 +163,7 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
         num2 = 0
 
         for num in range(self.iterations):
+            # Ensures that this process is cyclic
             state = states[num2%length]
             num2 += 1
             action = self.getAction(state)
